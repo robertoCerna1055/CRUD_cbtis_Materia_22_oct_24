@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+
+{% block titulo %} Gestion clientes  {% endblock %}
+
+{% block cuerpo %}
+  <h1> Gestionar Clientes --- Roberto Cerna </h1>
+  {% for m in losclientes %}
+  
+   <li> {{m.id_cliente}} .-.-.- {{m.nombre}} .-.-.- {{m.apellido_P}} {{m.apellido_M}} .-.-.- {{m.edad}} .-.-.- {{m.email}} {{m.celular}} .-.-.- {{m.genero}} .-.-.- {{m.pedido}}</li>
+  
+  
+  {% endfor %}
+
+{% endblock %}
